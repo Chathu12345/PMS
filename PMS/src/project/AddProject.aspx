@@ -6,14 +6,16 @@
 <head runat="server">
     <title>Add Project</title>
     <link href="css/style.css" rel="stylesheet" />
+    
 </head>
+    
 <body style="background-image: url(images/mandala5x.jpg); border: 20px solid #882464;">
     <form id="frmAddProject" runat="server">
 
     <div>
         <center>
         <table style="height: 620px; width: 807px">
-            <tr>
+			<tr>
             <th><h3 style="color:#3D1963">Add New Project</h3></th>
         </tr>
 
@@ -45,8 +47,7 @@
         <table>
             <tr>
             <td colspan="2">
-            <%--<asp:Button ID="btnSubmitx" runat="server" Text="Save" Height="37px" Width="110px" ForeColor="#FFFFFF" Backcolor="#882464" OnClick="btnSubmitx_Click"/>--%>
-            <asp:Button ID="btnSubmitx" runat="server" Text="Save" Height="37px" Width="110px" ForeColor="#FFFFFF" Backcolor="#882464" OnClick="btnSubmitx_Click"></asp:Button>
+            <asp:Button ID="btnSubmitx" runat="server" Text="Save" Height="37px" Width="110px" ForeColor="#FFFFFF" Backcolor="#882464" OnClick="btnSubmitx_Click"/>
             </td>
             <td colspan="2">
             <asp:Button ID="btnBack" runat="server" Text="Back" Height="37px" Width="110px" ForeColor="#FFFFFF" Backcolor="#882464" OnClick="btnBack_Click"/>

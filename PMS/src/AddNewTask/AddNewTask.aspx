@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddNewTask.aspx.cs" Inherits="PMS.src.task.AddNewTask" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddNewTask.aspx.cs" Inherits="PMS.src.AddNewTask.AddNewTask" %>
 
 <!DOCTYPE html>
 
@@ -8,7 +8,8 @@
     <link href="css/style.css" rel="stylesheet" />
    
 </head>
-<body style="        background-image: url(images/mandala5x.jpg);
+<body style="        background-image: url(i
+mages/mandala5x.jpg);
         background-repeat: no-repeat;
         border: 20px solid #882464;">
     <form id="frmAddNewTask" runat="server">
@@ -63,4 +64,3 @@
     </form>
 </body>
 </html>
-
