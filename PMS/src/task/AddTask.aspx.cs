@@ -25,13 +25,36 @@ namespace PMS.src.task
                     for (int i = 0; i < x; i++)
                     {
                         ddlStage.Items.Add((i + 1).ToString());
-                        //Response.Write("<script>alert('"+(i+1).ToString()+"');</script>");
+                        //Response.Write("<script>alert('"+(i+1).ToString()+"');</script>");                        
                     }
                 }
             }
-            //----------------------
+            LoadAssignEmployee();
         }
+        private void LoadAssignEmployee()
+        {
+            try
+            {
+                ddlEmployee.Items.Clear();
+                DataTable dt = code.ReturnTable("SELECT * FROM tbl_employee");
+                if (dt.Rows.Count > 0)
+                {
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        ddlEmployee.Items.Add(new ListItem(row["employee_name"].ToString(), row["user_id"].ToString()));
+                    }
 
+                }
+                else
+                {
+                    ddlEmployee.Items.Clear();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
         protected void btnSubmitx_Click(object sender, EventArgs e)
         {
             //Generate Id-------------------------------------------------------------
@@ -53,26 +76,38 @@ namespace PMS.src.task
             {
                 tId = "tsk00001";
             }
+            //------------------------------------------------------------
             //-------------------------------------------------------------
-            string TName, TPayment, SDate, EDate, TDescription, TDeadline, ProjectId;
+            string TName, TPayment, SDate, EDate, TDescription, TDeadline, TaskStages, EmployeeId, PId;
             TName = txtTask.Text;
             TPayment = txtTpayment.Text;
             TDescription = txtTDescription.Text;
             SDate = txtSDate.Text;
             EDate = txtEDate.Text;
             TDeadline = txtDeadline.Text;
-            ProjectId = Request.QueryString["pid"];
+            TaskStages = ddlStage.Text;
+            EmployeeId = ddlEmployee.SelectedValue.ToString();
+            PId= Request.QueryString["pId"];
 
             try
             {
-                string SQLQuery = "INSERT INTO tbl_task(task_id,project_id,assigned_employee,task_status,task_stages,taskvise_payment,s_date,deadline,e_date) VALUES('assigned_employee''" + tId + "','" + ProjectId + "','" + TName + "','" + TPayment + "','" + TDescription + "','" + SDate + "','" + EDate + "','" + TDeadline + "')";
+                string SQLQuery = "INSERT INTO tbl_task(task_id,task_name,project_id,assigned_employee,task_stages,taskvise_payment,task_description,s_date,deadline,e_date) VALUES('" + tId + "','" + TName + "','" + PId + "','" + EmployeeId + "','" + TaskStages + "','" + TPayment + "','" + TDescription + "','" + SDate + "','" + TDeadline + "','" + EDate + "')";
                 code.Execute(SQLQuery);
-                Response.Write("<script>alert('Success...!'); window.location = 'AddTasks.aspx';</script>");
+                Response.Write("<script>alert('Success...!'); </script>");
+                //clear texts after save data------
+                txtTask.Text = "";
+                txtTDescription.Text = "";
+                txtTpayment.Text = "";
+                txtSDate.Text = null;
+                txtEDate.Text = null;
+                txtDeadline.Text = null;
+                //---------------------------------
             }
             catch (Exception)
             {
 
-                Response.Write("<script>alert('Error...!'); window.location = 'AddTasks.aspx';</script>");
+                Response.Write("<script>alert('Error...!'); window.location = 'AddNewTask.aspx';</script>");
+                //Response.Redirect("src/task/AddTask.aspx");
             }
         }
 
