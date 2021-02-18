@@ -76,6 +76,60 @@ namespace PMS.src.AddNewTask {
         protected global::System.Web.UI.WebControls.TextBox txtTask;
         
         /// <summary>
+        /// lblSDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSDate;
+        
+        /// <summary>
+        /// txtSDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSDate;
+        
+        /// <summary>
+        /// lblDeadline control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDeadline;
+        
+        /// <summary>
+        /// txtDeadline control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDeadline;
+        
+        /// <summary>
+        /// lblEDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEDate;
+        
+        /// <summary>
+        /// txtEDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEDate;
+        
+        /// <summary>
         /// lblTDesc control.
         /// </summary>
         /// <remarks>
@@ -130,13 +184,13 @@ namespace PMS.src.AddNewTask {
         protected global::System.Web.UI.WebControls.TextBox txtTpayment;
         
         /// <summary>
-        /// btnSubmitx control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmitx;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
         
         /// <summary>
         /// btnBack control.
