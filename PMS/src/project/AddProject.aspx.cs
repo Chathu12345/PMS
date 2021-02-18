@@ -20,22 +20,22 @@ namespace PMS.src.project
             //Generate Id-------------------------------------------------------------
             string pId = "";
 
-           // DataTable dt = code.ReturnTable("SELECT TOP 1 project_id FROM tbl_project ORDER BY project_id DESC");
-            //if (dt.Rows.Count > 0)
-            //{
-            //    DataRow row = dt.Rows[0];
+            DataTable dt = code.ReturnTable("SELECT TOP 1 project_id FROM tbl_project ORDER BY project_id DESC");
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
 
-            //    pId = row["project_id"].ToString();
-            //    pId = pId.Replace("prj", "");
-            //    int newId = int.Parse(pId) + 1;
-            //    pId = newId.ToString();
-            //    pId = pId.PadLeft(5, '0');
-            //    pId = "prj" + pId;
-            //}
-            //else
-            //{
-            //    pId = "prj00001";
-            //}
+                pId = row["project_id"].ToString();
+                pId = pId.Replace("prj", "");
+                int newId = int.Parse(pId) + 1;
+                pId = newId.ToString();
+                pId = pId.PadLeft(5, '0');
+                pId = "prj" + pId;
+            }
+            else
+            {
+                pId = "prj00001";
+            }
             //-------------------------------------------------------------
             // 01 - Save Data-------------------
             string PName, PDescription, NStages, SDate, EDate;
