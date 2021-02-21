@@ -7,40 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PMS.src.task
-{
-
-
-    public partial class AddNewTask
-    {
-
+namespace PMS.src.task {
+    
+    
+    public partial class AddTask {
+        
         /// <summary>
-        /// frmAddNewTask control.
+        /// frmAddTasks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm frmAddNewTask;
-
-        /// <summary>
-        /// lblPname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPname;
-
-        /// <summary>
-        /// ddlPname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPname;
-
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmAddTasks;
+        
         /// <summary>
         /// lblStage control.
         /// </summary>
@@ -49,7 +29,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblStage;
-
+        
         /// <summary>
         /// ddlStage control.
         /// </summary>
@@ -58,7 +38,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlStage;
-
+        
         /// <summary>
         /// lblTname control.
         /// </summary>
@@ -67,7 +47,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTname;
-
+        
         /// <summary>
         /// txtTask control.
         /// </summary>
@@ -76,7 +56,61 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTask;
-
+        
+        /// <summary>
+        /// lblSDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSDate;
+        
+        /// <summary>
+        /// txtSDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSDate;
+        
+        /// <summary>
+        /// lblDeadline control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDeadline;
+        
+        /// <summary>
+        /// txtDeadline control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDeadline;
+        
+        /// <summary>
+        /// lblEDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEDate;
+        
+        /// <summary>
+        /// txtEDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEDate;
+        
         /// <summary>
         /// lblTDesc control.
         /// </summary>
@@ -85,7 +119,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTDesc;
-
+        
         /// <summary>
         /// txtTDescription control.
         /// </summary>
@@ -94,7 +128,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTDescription;
-
+        
         /// <summary>
         /// lblemployee control.
         /// </summary>
@@ -103,7 +137,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblemployee;
-
+        
         /// <summary>
         /// ddlEmployee control.
         /// </summary>
@@ -112,7 +146,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlEmployee;
-
+        
         /// <summary>
         /// lbltpayment control.
         /// </summary>
@@ -121,7 +155,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbltpayment;
-
+        
         /// <summary>
         /// txtTpayment control.
         /// </summary>
@@ -130,7 +164,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTpayment;
-
+        
         /// <summary>
         /// btnSubmitx control.
         /// </summary>
@@ -139,7 +173,7 @@ namespace PMS.src.task
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmitx;
-
+        
         /// <summary>
         /// btnBack control.
         /// </summary>
