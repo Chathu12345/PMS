@@ -65,6 +65,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+
+    <Content Include="Client\AddNewClient\AddNewClient.aspx" />
+    <Content Include="Client\ClientContactList\ClientContactList.aspx" />
+    <Content Include="Client\ClientContact\ClientContact.aspx" />
+    <Content Include="Client\ClientList\ClientList.aspx" />
+
     <Content Include="Login\Dashboard\Dashboard.aspx" />
     <Content Include="Login\DeleteEmp\DeleteEmp.aspx" />
     <Content Include="Login\EmpRgistration\EmpRegistration.aspx" />
@@ -79,12 +85,42 @@
     <Content Include="src\Attachments\Attachment.aspx" />
     <Content Include="src\BugFix\BugFix.aspx" />
     <Content Include="src\PriorityList\PriorityList.aspx" />
+
     <Content Include="src\project\AddProject.aspx" />
     <Content Include="src\task\AddTask.aspx" />
     <Content Include="src\UpdateExistingProject\UpdateExistingProject.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="Client\AddNewClient\AddNewClient.aspx.cs">
+      <DependentUpon>AddNewClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\AddNewClient\AddNewClient.aspx.designer.cs">
+      <DependentUpon>AddNewClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientContactList\ClientContactList.aspx.cs">
+      <DependentUpon>ClientContactList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientContactList\ClientContactList.aspx.designer.cs">
+      <DependentUpon>ClientContactList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientContact\ClientContact.aspx.cs">
+      <DependentUpon>ClientContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientContact\ClientContact.aspx.designer.cs">
+      <DependentUpon>ClientContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientList\ClientList.aspx.cs">
+      <DependentUpon>ClientList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientList\ClientList.aspx.designer.cs">
+      <DependentUpon>ClientList.aspx</DependentUpon>
+
     <Compile Include="code.cs" />
     <Compile Include="Login\Dashboard\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
@@ -155,6 +191,7 @@
     </Compile>
     <Compile Include="Payment\UpcomingPayment\UpcomingPayment.aspx.designer.cs">
       <DependentUpon>UpcomingPayment.aspx</DependentUpon>
+
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\AddNewTask\AddNewTask.aspx.cs">
