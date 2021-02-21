@@ -69,6 +69,12 @@
     <Content Include="Login\DeleteEmp\DeleteEmp.aspx" />
     <Content Include="Login\EmpRgistration\EmpRegistration.aspx" />
     <Content Include="Login\Login\Login.aspx" />
+    <Content Include="Payment\AddNewPayment\AddNewPayment.aspx" />
+    <Content Include="Payment\PaymentHistory\PaymentHistory.aspx" />
+    <Content Include="Payment\PaymentList\PaymentList.aspx" />
+    <Content Include="Payment\TaskWisePayment\TaskWisePayment.aspx" />
+    <Content Include="Payment\TotalPayment\TaskWisePayment.aspx" />
+    <Content Include="Payment\UpcomingPayment\UpcomingPayment.aspx" />
     <Content Include="src\AddNewTask\AddNewTask.aspx" />
     <Content Include="src\Attachments\Attachment.aspx" />
     <Content Include="src\BugFix\BugFix.aspx" />
@@ -107,6 +113,48 @@
     </Compile>
     <Compile Include="Login\Login\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\AddNewPayment\AddNewPayment.aspx.cs">
+      <DependentUpon>AddNewPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\AddNewPayment\AddNewPayment.aspx.designer.cs">
+      <DependentUpon>AddNewPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\PaymentHistory\PaymentHistory.aspx.cs">
+      <DependentUpon>PaymentHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\PaymentHistory\PaymentHistory.aspx.designer.cs">
+      <DependentUpon>PaymentHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\PaymentList\PaymentList.aspx.cs">
+      <DependentUpon>PaymentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\PaymentList\PaymentList.aspx.designer.cs">
+      <DependentUpon>PaymentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\TaskWisePayment\TaskWisePayment.aspx.cs">
+      <DependentUpon>TaskWisePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\TaskWisePayment\TaskWisePayment.aspx.designer.cs">
+      <DependentUpon>TaskWisePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\TotalPayment\TaskWisePayment.aspx.cs">
+      <DependentUpon>TaskWisePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\TotalPayment\TaskWisePayment.aspx.designer.cs">
+      <DependentUpon>TaskWisePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\UpcomingPayment\UpcomingPayment.aspx.cs">
+      <DependentUpon>UpcomingPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\UpcomingPayment\UpcomingPayment.aspx.designer.cs">
+      <DependentUpon>UpcomingPayment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\AddNewTask\AddNewTask.aspx.cs">

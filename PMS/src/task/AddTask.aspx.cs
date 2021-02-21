@@ -114,7 +114,7 @@ namespace PMS.src.task
 
         protected void btnBack_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("AddProject.aspx");
+            Response.Redirect("/src/project/AddProject.aspx");
         }
     }
 }
